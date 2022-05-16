@@ -1,0 +1,112 @@
+@media (max-width: 1000px) {
+	ul{
+    margin-left: 10%;  
+}
+
+}
+@media (max-width: 900px) {
+	
+	.envelope {
+	width: 500px;
+	}
+.your-name, .email-address {
+  	width:200px;	
+}
+.your-message {	    
+	width:450px;
+	height:80px;	
+}
+@media (max-width: 768px) {
+	 
+	 #searchform{
+    top: 1%;
+    right: 2%;
+	}
+	 ul.menu>li{
+    float: none;
+    margin: 5px auto;
+	display: block;
+	width: 200px;
+	}
+	ul{
+    margin-left: 0;  
+	}
+	ul.submenu{
+	left: 185px;
+	top: 10px;
+	}
+	.feedback {
+		top: 70px; 
+	}
+	.footer1{
+    margin-left: 20px;
+}
+   .footer2{  
+    margin-right: 20px;
+}
+.envelope {
+	width: 350px;
+	}
+.your-name, .email-address {
+  	width:200px;
+margin: 0 0 10px 0;	
+}
+.your-message {	    
+	width:300px;
+	height:80px;	
+}
+	aside{
+    width: 60px;   
+    padding: 2px; 
+    min-height: 0px;
+}
+.ic{
+ margin: 20px 0px; 
+}
+section{  
+  min-height: 0px;
+  padding: 0 10px; 
+  margin-left: 60px;
+  }
+ 
+
+	
+}
+@media (max-width: 480px) {
+   #searchform {
+     float: left;
+     margin-left: 0;
+}
+
+  ul{
+    margin-left: 0; 
+    padding: 0;	
+	}
+  ul.menu>li{
+    margin: 0 ; 
+ 	}
+	header{
+	border-radius: 1px;
+}
+ul.submenu{
+	left: 150px;
+	top: 10px;
+}
+
+.envelope {
+	width: 150px;
+	padding: 0 0 5px 5px;
+	}
+.your-name, .email-address {
+  	width:140px;
+    margin: 0 0 10px 0;	
+}
+.your-message {	    
+	width:130px;
+	height:80px;
+	}
+.send-message {
+	margin-top: 5px;
+}
+
+}

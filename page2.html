@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Свой Мирочек</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="page2.css">
+ <link rel="icon" href=".ico">
+ <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Concert+One">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>  
+</head>
+<body>
+    <a id="family"></a>
+  <header>
+    <a id="top"></a>
+  <h1>Свой Мирочек</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="page1.html#main" class="a">Главная</a></li>
+     <li class="a2"><a href="page2.html#family" class="a"  >Семья</a>    
+        <ul class="submenu">
+          <li><a href="page2.html#children">Муж, дети</a></li>
+          <li><a href="page2.html#parents">Родители</a></li>
+          <li><a href="page2.html#grandparents">Прародители</a></li>
+        </ul>
+       </li>
+    <li><a href="page3.html#food" class="a">Еда</a>
+      <ul class="submenu">
+          <li><a href="page3.html#food">Люблю</a></li>
+          <li><a href="page3.html#food">Не люблю</a></li>
+          <li><a href="page3.html#recipe">Рецептик</a></li>
+        </ul>
+      </li>
+    <li><a href="page4.html#dreams" class="a" >Мечты</a>
+      <ul class="submenu">
+          <li><a href="page4.html#dreams">Дом</a></li>
+          <li><a href="page4.html#dreams">Работа</a></li>
+          <li><a href="page4.html#dreams">Путешествия</a></li>
+        </ul>
+      </li>
+    <li><a href="page5.html#cats" class="a">Котики</a>
+      <ul class="submenu">
+          <li><a href="page5.html#cats">Коты</a></li>
+          <li><a href="page5.html#cats">Котятки</a></li>
+          <li><a href="page5.html#cats">И не только</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="feedback">  
+  <a title="Skype" href="skype:lenkaaa55?call"><img src="http://s1.iconbird.com/ico/2013/9/446/w512h5121380376472MetroUISkype.png" alt="" width="80" height="100"></a>
+  <a title="Viber" href="viber://add?number=380502455540"><img src="https://cdn.icon-icons.com/icons2/41/PNG/128/Viber_phone_call_telephone_6628.png" alt="" width="70" height="90"></a> 
+  <a title="Facebook" href="https://www.facebook.com/profile.php?id=1372787761"><img src="https://api.icons8.com/download/94c75cc46bd24e0379edf34e5c2cadf8bac0faaa/Color/PNG/512/Social_Networks/facebook-512.png" alt="" width="80" height="110"></a>
+</div>
+  <div class="top">
+    <a href="#top">⇑</a>
+  </div>
+  <form action="handler.php" method="get" id="searchform">
+        <input type="text" placeholder="Поиск по сайту...">
+        <button type="submit">&#128269;</button>
+      </form>
+  <aside>
+  <div class="ic">
+  <div class="icons"><a href="page1.html#main" title="Главная страница" OnMouseOver="document.getElementById('M_B').src='https://img.icons8.com/color/48/000000/blond-princess.png'" OnMouseOut="document.getElementById('M_B').src='https://img.icons8.com/doodle/64/000000/girl.png'"><img id="M_B" src="https://img.icons8.com/doodle/64/000000/girl.png" alt="Главная" width="50" height="50"></a></div>
+  <div class="icons"><a href="page2.html#family" title="Семья" OnMouseOver="document.getElementById('F_B').src='https://img.icons8.com/dusk/48/000000/family.png'"       OnMouseOut="document.getElementById('F_B').src='https://img.icons8.com/color/48/000000/family.png'"><img id="F_B" src="https://img.icons8.com/color/48/000000/family.png" alt="семья" width="50" height="50"></a></div>
+  <div class="icons"><a href="page3.html#food" title="Еда" OnMouseOver="document.getElementById('F_F').src='https://img.icons8.com/color/48/000000/strawberry.png'"       OnMouseOut="document.getElementById('F_F').src='https://img.icons8.com/color/48/000000/cherry.png'"><img id="F_F" src="https://img.icons8.com/color/48/000000/cherry.png" alt="еда" width="50" height="50"></a></div>
+  <div class="icons"><a href="page4.html#dreams" title="Мечты" OnMouseOver="document.getElementById('D_B').src='https://img.icons8.com/office/40/000000/eiffel-tower.png'"       OnMouseOut="document.getElementById('D_B').src='https://img.icons8.com/color/48/000000/beach.png'"><img id="D_B" src="https://img.icons8.com/color/48/000000/beach.png" alt="мечты" width="50" height="50"></a></div>
+      <div class="icons"><a href="page5.html#cats" title="Котики"       OnMouseOver="document.getElementById('B_B').src='https://img.icons8.com/ios-glyphs/64/000000/cat.png'"       OnMouseOut="document.getElementById('B_B').src='https://img.icons8.com/ios/48/000000/cat-filled.png'">
+    <img src="https://img.icons8.com/ios/48/000000/cat-filled.png" id="B_B" alt="котики" width="50" height="50"></a></div>
+  </div>   
+</aside>
+<section>
+<div class="show">
+           <a class="show-btn" title="Напишите мне" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='block';document.getElementById('fade').style.display='block'">&#9993; письмо</a>
+         </div>
+	   <div id="envelope" class="envelope">
+       <a class="close-btn" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='none';document.getElementById('fade').style.display='none'">Закрыть</a>
+		<h4>oтправить сообщение</h4>
+		<form method="post" action="handler.php">
+      <input type="text" name="sender" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'* Ваше Имя':this.value;" value="* Ваше Имя" class="your-name" required/>
+      <input type="text" name="email" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'* Ваш Email':this.value;" value="* Ваш Email" class="email-address" required/>
+		     <textarea class="your-message">Пожалуйста, введите своё сообщение здесь ..
+         </textarea>
+		     <input type="submit" name="send" value="Отправить" class="send-message">      
+		</form>
+	   </div>
+	   <div id="fade" class="black-overlay">
+	   </div>
+  
+  <h3>МОЯ семьЯ</h3>
+  <p><b><i class="i">Моя семья</i></b> - <span class="husband">моя гордость, моя любовь, моя жизнь, мой мир!</span></p>
+  <figure class="f1">
+    <img class="fotos" src="images/family1.jpg" alt="фото_семья" >
+    <figcaption>Семья</figcaption>
+  </figure>
+    <p>Ранее этому термину в моём сознании особого значения не придавалось, казалось - есть Я и мир весь мой единственно. В моём мирке со мной расли любимые папочка,  мамочка и сестренка. Всё, что происходило вокруг, от меня не зависило и особо меня не интересовало. Всё вертелось вокруг меня без моего участия.</p>
+    <p>Шли годы, сознание расло вместе со мной меняя мировоззрение. И, в какой то момент, вдруг - Я лишь часть механизма огромной вселенной, мой мир - крохотная часть другого Мира!</p>
+    <p>Но время меняет всё на своём пути. И теперь мой Мир - моя Семья! Он огромен, многогранен, ярок, эмоционален и, кажеться, бесконечен!
+  </p>
+  <a id="children"></a>
+  <h3>Глава семьи</h3>
+  <p>
+    Извечный терзающий душу вопрос: <b>"- Кто в доме хозяин?"</b> - меня не терзает. Хозяин- он, хозяйка- она. Муж должен быть...каким?...  
+  </p>
+  <figure  class="f2">
+    <img class="fotos" src="images/we2.jpg" alt="фото_семья" width="120" height="120">
+    <figcaption>муж</figcaption>
+  </figure>
+  <p>А пусть просто так и останеться - муж должен быть! И я судьбу благодарю, за то что он у меня есть, такой какой есть - любимый и родной! Естественно, в семье мужчина - главный, сомнений быть не может. Он должен это знать и в это верить! Пусть верит! Это ж какой огромный груз решения задач и последствий с плеч долой. Он всё должен знать: должен знать что делать, должен знать как делать, должен знать когда делать, должен знать до каких пор делать, должен знать что должно получиться, должен знать как переделать!..Какая ответственность, сила, мужество, терпение, старания! Тут понимаешь, он- бесценный клад. Любить, хранить, лелеять, нежить и... кормить его необходимо очень! Хотя, добытчик в семье - он и он нас кормит, неодменно.<br><span class="husband">Мой муж- мой рыцарь, идеал!</span> Пока на этом кончим.</p>
+  <h3>Главёнки</h3>
+    <p>Глава семьи, решили,- муж. Так кто же тогда дети? </p>
+      <figure  class="f3">
+    <img class="fotos" src="images/children.jpg" alt="фото_семья" width="120" height="120">
+    <figcaption>дети</figcaption>
+  </figure>
+      <p>Идём куда они хотят, едим что дети захотят, играем с ними в игры, ТВ- мультфильмы, и, спать ложимся только с ними! Незнаю чей сильней приказ: главы или гловят? </p>
+  <p>Дети - цветы жизни. Мои мальчишки - моя радость, мои мечты, моя огромная вселенная! Они не только наполняют смыслом жизнь, а и вызывают само это желание- жить! С ними и радуешься, и грустишь пропуская все их эмоции через себя. Иногда кажется, что они управляют тобой  не только как роботом - диктуя лишь своим существованием что когда и как нужно сделать, но и формируют твоё психо-эмоциональное состояние вольно или невольно. От того и вывод: деткам нужно всячески угождать, баловать, уделять им как можно больше внимания и тратить сил для их блага, ибо их счастье- твоё счастье. Чем больше у них радости, тем счастливее будешь ты.</p>
+  <a id="parents"></a>
+  <h3>Родители</h3>
+  <div class="f4f">
+  <figure  class="f4">
+    <img class="fotos" src="images/mam.jpg" alt="фото_семья" width="120" height="120">
+    <figcaption>бабушка Люда</figcaption>
+  </figure>
+  <figure class="f4">
+    <img class="fotos" src="images/mama.jpg" alt="фото_семья" width="120" height="120">
+    <figcaption>бабушка Надя</figcaption>
+  </figure>
+  <figure class="f4">
+    <img class="fotos" src="images/oksana.jpg" alt="фото_семья" width="120" height="120">
+    <figcaption>б. Оксана</figcaption>
+  </figure>
+    </div>
+  <p>Сначала нас учили всему родители, а мы их не хотели слушать считая что их нравоучения устарели, немодно, несовременно, старый век и т.д.<br> А теперь мы учим своих детей, которые нас нехотят слушать, вероятно, по той же причине.<br> И всё же мы- родители, безусловно считаем, что так и надо продолжать в том же духе.<br> Ведь кто ж наставит на путь истинный наших детей если не мы?!</p><p> .</p><p> .</p>
+  <a id="grandparents"></a>
+  <h3>Прародители</h3>
+  <p>Многие ли знают что либо о родителях своих родителей и их прародителях? Куда уходят наши семейные исторические корни? Что же мы сможем рассказать о нашем роде нашим внукам и правнукам?  Напимер, мой прадед,  <i>Клишин Иван Фетисович</i> воевал и какие имел <a href="http://podvignaroda.ru/?#tab=navResult" target="_blank" >награды</a>:</p>
+  <p><a href="http://podvignaroda.ru/?#id=33732531&tab=navDetailManAward" target="_blank">22.06.1944 - Медаль «За отвагу»</a>.</p>
+  <p><a href="http://podvignaroda.ru/?#id=36113380&tab=navDetailManAward" target="_blank">17.09.1944,18.09.1944 - Орден Красной Звезды</a>.</p>
+  <p><a href="/http://podvignaroda.ru/?#id=46263187&tab=navDetailManAward" target="_blank">14.01.1944 - Медаль «За отвагу»</a>.</p>
+  <p><a href="http://podvignaroda.ru/?#id=1001353730&tab=navDetailManCard" target="_blank">25.01.1944 - Медаль «За отвагу»</a>.</p>
+  <p><a href="http://podvignaroda.ru/?#id=1001353734&tab=navDetailManCard" target="_blank">30.09.1944 - Орден Красной Звезды</a>.</p>
+  <p><a href="http://podvignaroda.ru/?#id=1530048159&tab=navDetailManAward" target="_blank">Медаль «За взятие Берлина»</a>.</p>
+</section>
+<footer>
+  <div class="footer1">
+  <p>Автор: Елена Козенко</p>
+  <p>© 2019<p>
+   </div>
+  <div class="footer2">
+    Контакты:<br>
+    lenashmykova81@gmail.com<br>
+    Skype: lenkaaa55
+  </div>
+</footer> 
+ </body>
+</html>

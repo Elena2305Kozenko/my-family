@@ -1,0 +1,168 @@
+@media (max-width: 1000px) {
+	ul{
+    margin-left: 10%;  
+}
+h2{
+	font-size: 3em;
+	margin-left: 25%;
+	margin-top: 9%;
+	}
+}
+@media (max-width: 900px) {
+	h2{
+	margin: 10% auto 0;
+	}
+	.hello{
+		text-align: center;
+	}
+	.envelope {
+	width: 500px;
+	}
+.your-name, .email-address {
+  	width:200px;	
+}
+.your-message {	    
+	width:450px;
+	height:80px;	
+}
+@media (max-width: 768px) {
+	
+	#searchform{
+    top: 1%;
+    right: 2%;
+	}
+	ul.menu>li{
+    float: none;
+    margin: 5px auto;
+	display: block;
+	width: 200px;
+	}
+	ul{
+    margin-left: 0;  
+	}
+	ul.submenu{
+	left: 185px;
+	top: 10px;
+	}
+	.feedback {
+		top: 70px; 
+	}
+	.footer1{
+    margin-left: 20px;
+}
+   .footer2{  
+    margin-right: 20px;
+}
+.envelope {
+	width: 350px;
+	}
+.your-name, .email-address {
+  	width:200px;
+margin: 0 0 10px 0;	
+}
+.your-message {	    
+	width:300px;
+	height:80px;	
+}
+	aside{
+    width: 60px;   
+    padding: 2px; 
+    min-height: 0px;
+}
+.ic{
+ margin: 20px 0px; 
+}
+section{  
+  min-height: 0px;
+  padding: 0 10px; 
+  margin-left: 60px;
+  }
+  .hello{
+    min-height: 160px;  
+    background: transparent;
+	margin: 15% auto 0;
+	width: 100%;
+	display: block;
+    padding: 0;
+    }
+	h2{
+	font-size: 2.5em;
+	margin: 0 auto ;
+	}
+	h2:hover{   
+  outline: 10px double #CECECE ;
+	}
+	
+}
+@media (max-width: 480px) {
+   #searchform {
+     float: left;
+     margin-left: 0;
+}
+.envelope {
+	width: 150px;
+	padding: 0 0 5px 5px;
+	}
+.your-name, .email-address {
+  	width:140px;
+    margin: 0 0 10px 0;	
+}
+.your-message {	    
+	width:130px;
+	height:80px;
+	}
+.send-message {
+	margin-top: 5px;
+}
+  ul{
+    margin-left: 0; 
+    padding: 0;	
+	}
+  ul.menu>li{
+    margin: 0 ; 
+ 	}
+	header{
+	border-radius: 1px;
+}
+ul.submenu{
+	left: 150px;
+	top: 10px;
+}
+.hello{
+    animation: none;   
+    background: transparent;
+	margin: 15%;
+	min-height: 50px;
+}
+h2{
+	font-size: 1.8em;
+	margin: 0 auto ;
+	animation: none; 
+	color: #555;
+    background: transparent;
+    text-shadow:
+    1px 1px 0px #c4dbe2,
+    2px 2px 0px #b4d1d9,
+    3px 3px 0px #a6c6cf,
+    4px 4px 0px #94b8c3,
+    5px 5px 0px #87aeb9,
+    6px 6px 0px #7aa3af,
+    7px 7px 0px #6d97a3,
+    8px 8px 0px #618b98,
+    9px 9px 0px #56818e,
+    10px 10px 0px #4c7683,
+    12px 12px 20px rgba(0,0,0,.9);
+	padding: 2px;
+	}
+	h2:hover{
+  color: #555;
+  background-image: transparent;
+  outline: none;
+  outline-offset: 0px;
+  border-radius: 15px;
+  animation: none;
+  
+	}
+
+
+}

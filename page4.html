@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Свой Мирочек</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="page1.css">  
+<link rel="icon" href=".ico">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Concert+One"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="script1.js"></script>
+</head>
+<body>
+  <a id="dreams"></a>
+  <header>
+  <a id="top"></a>
+  <h1>Свой Мирочек</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="page1.html#main" class="a">Главная</a></li>
+     <li class="a2"><a href="page2.html#family" class="a"  >Семья</a>    
+        <ul class="submenu">
+          <li><a href="page2.html#children">Муж, дети</a></li>
+          <li><a href="page2.html#parents">Родители</a></li>
+          <li><a href="page2.html#grandparents">Прародители</a></li>
+        </ul>
+       </li>
+    <li><a href="page3.html#food" class="a" >Еда</a>
+      <ul class="submenu">
+          <li><a href="page3.html#food">Люблю</a></li>
+          <li><a href="page3.html#food">Не люблю</a></li>
+          <li><a href="page3.html#recipe">Рецептик</a></li>
+        </ul>
+      </li>
+    <li><a href="page4.html#dreams" class="a" >Мечты</a>
+      <ul class="submenu">
+          <li><a href="page4.html#dreams">Дом</a></li>
+          <li><a href="page4.html#dreams">Работа</a></li>
+          <li><a href="page4.html#dreams">Путешествия</a></li>
+        </ul>
+      </li>
+    <li><a href="page5.html#cats" class="a">Котики</a>
+      <ul class="submenu">
+          <li><a href="page5.html#cats">Коты</a></li>
+          <li><a href="page5.html#cats">Котятки</a></li>
+          <li><a href="page5.html#cats">И не только</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
+</header>
+
+<div class="feedback">  
+  <a title="Skype" href="skype:lenkaaa55?call"><img src="http://s1.iconbird.com/ico/2013/9/446/w512h5121380376472MetroUISkype.png" alt="" width="80" height="100"></a>
+  <a title="Viber" href="viber://add?number=380502455540"><img src="https://cdn.icon-icons.com/icons2/41/PNG/128/Viber_phone_call_telephone_6628.png" alt="" width="70" height="90"></a> 
+  <a title="Facebook" href="https://www.facebook.com/profile.php?id=1372787761"><img src="https://api.icons8.com/download/94c75cc46bd24e0379edf34e5c2cadf8bac0faaa/Color/PNG/512/Social_Networks/facebook-512.png" alt="" width="80" height="110"></a>
+</div>
+  <div class="top">
+    <a href="#top">⇑</a>
+ </div>
+ <form action="handler.php" method="get" id="searchform">
+        <input type="text" placeholder="Поиск по сайту...">
+        <button type="submit">&#128269;</button>
+      </form>
+<aside>
+  <div class="ic">
+  <div class="icons"><a href="page1.html#main" title="Главная страница" OnMouseOver="document.getElementById('M_B').src='https://img.icons8.com/color/48/000000/blond-princess.png'" OnMouseOut="document.getElementById('M_B').src='https://img.icons8.com/doodle/64/000000/girl.png'"><img id="M_B" src="https://img.icons8.com/doodle/64/000000/girl.png" alt="Главная" width="50" height="50"></a></div>
+  <div class="icons"><a href="page2.html#family" title="Семья" OnMouseOver="document.getElementById('F_B').src='https://img.icons8.com/dusk/48/000000/family.png'"       OnMouseOut="document.getElementById('F_B').src='https://img.icons8.com/color/48/000000/family.png'"><img id="F_B" src="https://img.icons8.com/color/48/000000/family.png" alt="семья" width="50" height="50"></a></div>
+  <div class="icons"><a href="page3.html#food" title="Еда" OnMouseOver="document.getElementById('F_F').src='https://img.icons8.com/color/48/000000/strawberry.png'"       OnMouseOut="document.getElementById('F_F').src='https://img.icons8.com/color/48/000000/cherry.png'"><img id="F_F" src="https://img.icons8.com/color/48/000000/cherry.png" alt="еда" width="50" height="50"></a></div>
+  <div class="icons"><a href="page4.html#dreams" title="Мечты" OnMouseOver="document.getElementById('D_B').src='https://img.icons8.com/office/40/000000/eiffel-tower.png'"       OnMouseOut="document.getElementById('D_B').src='https://img.icons8.com/color/48/000000/beach.png'"><img id="D_B" src="https://img.icons8.com/color/48/000000/beach.png" alt="мечты" width="50" height="50"></a></div>
+      <div class="icons"><a href="page5.html#cats" title="Котики"       OnMouseOver="document.getElementById('B_B').src='https://img.icons8.com/ios-glyphs/64/000000/cat.png'"       OnMouseOut="document.getElementById('B_B').src='https://img.icons8.com/ios/48/000000/cat-filled.png'">
+    <img src="https://img.icons8.com/ios/48/000000/cat-filled.png" id="B_B" alt="котики" width="50" height="50"></a></div>
+  </div>   
+</aside>
+<section>
+<div class="show">
+ <a class="show-btn" title="Напишите мне" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='block';document.getElementById('fade').style.display='block'">&#9993; письмо</a>
+ </div>
+ <div id="envelope" class="envelope">
+       <a class="close-btn" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='none';document.getElementById('fade').style.display='none'">Закрыть</a>
+		<h4>oтправить сообщение</h4>
+		<form method="post" action="handler.php">
+      <input type="text" name="sender" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'* Ваше Имя':this.value;" value="* Ваше Имя" class="your-name" required/>
+      <input type="text" name="email" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'* Ваш Email':this.value;" value="* Ваш Email" class="email-address" required/>
+		     <textarea class="your-message">Пожалуйста, введите своё сообщение здесь ..
+         </textarea>
+		     <input type="submit" name="send" value="Отправить" class="send-message">      
+		</form>
+	   </div>
+	   <div id="fade" class="black-overlay">
+	   </div>
+  </section>
+<footer>
+  <div class="footer1">
+  <p>Автор: Елена Козенко</p>
+  <p>© 2019<p>
+   </div>
+  <div class="footer2">
+    Контакты:<br>
+    lenashmykova81@gmail.com<br>
+    Skype: lenkaaa55
+  </div>
+  
+</footer> 
+
+ </body>
+</html>

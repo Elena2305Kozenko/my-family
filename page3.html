@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Свой Мирочек</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="page1.css">  
+<link rel="icon" href=".ico">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Concert+One"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+<body>
+    <a id="food"></a>
+<header>
+  <a id="top"></a>
+  <h1>Свой Мирочек</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="page1.html#main" class="a">Главная</a></li>
+     <li class="a2"><a href="page2.html#family" class="a"  >Семья</a>    
+        <ul class="submenu">
+          <li><a href="page2.html#children">Муж, дети</a></li>
+          <li><a href="page2.html#parents">Родители</a></li>
+          <li><a href="page2.html#grandparents">Прародители</a></li>
+        </ul>
+       </li>
+    <li><a href="page3.html#food" class="a" >Еда</a>
+      <ul class="submenu">
+          <li><a href="page3.html#food">Люблю</a></li>
+          <li><a href="page3.html#food">Не люблю</a></li>
+          <li><a href="page3.html#recipe">Рецептик</a></li>
+        </ul>
+      </li>
+    <li><a href="page4.html#dreams" class="a" >Мечты</a>
+      <ul class="submenu">
+          <li><a href="page4.html#dreams">Дом</a></li>
+          <li><a href="page4.html#dreams">Работа</a></li>
+          <li><a href="page4.html#dreams">Путешествия</a></li>
+        </ul>
+      </li>
+    <li><a href="page5.html#cats" class="a">Котики</a>
+      <ul class="submenu">
+          <li><a href="page5.html#cats">Коты</a></li>
+          <li><a href="page5.html#cats">Котятки</a></li>
+          <li><a href="page5.html#cats">И не только</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
+</header>
+
+<div class="feedback">  
+  <a title="Skype" href="skype:lenkaaa55?call"><img src="http://s1.iconbird.com/ico/2013/9/446/w512h5121380376472MetroUISkype.png" alt="" width="80" height="100"></a>
+  <a title="Viber" href="viber://add?number=380502455540"><img src="https://cdn.icon-icons.com/icons2/41/PNG/128/Viber_phone_call_telephone_6628.png" alt="" width="70" height="90"></a> 
+  <a title="Facebook" href="https://www.facebook.com/profile.php?id=1372787761"><img src="https://api.icons8.com/download/94c75cc46bd24e0379edf34e5c2cadf8bac0faaa/Color/PNG/512/Social_Networks/facebook-512.png" alt="" width="80" height="110"></a>
+</div>
+  <div class="top">
+    <a href="#top">⇑</a>
+ </div>
+ <form action="handler.php" method="get" id="searchform">
+        <input type="text" placeholder="Поиск по сайту...">
+        <button type="submit">&#128269;</button>
+      </form>
+<aside>
+  <div class="ic">
+  <div class="icons"><a href="page1.html#main" title="Главная страница" OnMouseOver="document.getElementById('M_B').src='https://img.icons8.com/color/48/000000/blond-princess.png'" OnMouseOut="document.getElementById('M_B').src='https://img.icons8.com/doodle/64/000000/girl.png'"><img id="M_B" src="https://img.icons8.com/doodle/64/000000/girl.png" alt="Главная" width="50" height="50"></a></div>
+  <div class="icons"><a href="page2.html#family" title="Семья" OnMouseOver="document.getElementById('F_B').src='https://img.icons8.com/dusk/48/000000/family.png'"       OnMouseOut="document.getElementById('F_B').src='https://img.icons8.com/color/48/000000/family.png'"><img id="F_B" src="https://img.icons8.com/color/48/000000/family.png" alt="семья" width="50" height="50"></a></div>
+  <div class="icons"><a href="page3.html#food" title="Еда" OnMouseOver="document.getElementById('F_F').src='https://img.icons8.com/color/48/000000/strawberry.png'"       OnMouseOut="document.getElementById('F_F').src='https://img.icons8.com/color/48/000000/cherry.png'"><img id="F_F" src="https://img.icons8.com/color/48/000000/cherry.png" alt="еда" width="50" height="50"></a></div>
+  <div class="icons"><a href="page4.html#dreams" title="Мечты" OnMouseOver="document.getElementById('D_B').src='https://img.icons8.com/office/40/000000/eiffel-tower.png'"       OnMouseOut="document.getElementById('D_B').src='https://img.icons8.com/color/48/000000/beach.png'"><img id="D_B" src="https://img.icons8.com/color/48/000000/beach.png" alt="мечты" width="50" height="50"></a></div>
+      <div class="icons"><a href="page5.html#cats" title="Котики"       OnMouseOver="document.getElementById('B_B').src='https://img.icons8.com/ios-glyphs/64/000000/cat.png'"       OnMouseOut="document.getElementById('B_B').src='https://img.icons8.com/ios/48/000000/cat-filled.png'">
+    <img src="https://img.icons8.com/ios/48/000000/cat-filled.png" id="B_B" alt="котики" width="50" height="50"></a></div>
+  </div>   
+</aside>
+<section>
+<div class="show">
+           <a class="show-btn" title="Напишите мне" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='block';document.getElementById('fade').style.display='block'">&#9993; письмо</a>
+         </div>
+	   <div id="envelope" class="envelope">
+       <a class="close-btn" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='none';document.getElementById('fade').style.display='none'">Закрыть</a>
+		<h4>oтправить сообщение</h4>
+		<form method="post" action="handler.php">
+      <input type="text" name="sender" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'* Ваше Имя':this.value;" value="* Ваше Имя" class="your-name" required/>
+      <input type="text" name="email" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'* Ваш Email':this.value;" value="* Ваш Email" class="email-address" required/>
+		     <textarea class="your-message">Пожалуйста, введите своё сообщение здесь ..
+         </textarea>
+		     <input type="submit" name="send" value="Отправить" class="send-message">      
+		</form>
+	   </div>
+	   <div id="fade" class="black-overlay">
+	   </div>
+     <div class="first-letter">
+  <p>
+    Давайте поиграем! Угадайте из представленных ниже блюд те, которые я люблю! Для того, чтоб узнать верно ли вы думаете- наведите курсор мыши на фото блюда:-) Если Ваш любимый браузер - Internet Explorer, тогда ориентируйтесь
+	по изменению цвета названия блюда при наведении на него мышкой: красный цвет - НЕТ, зелёный - ДА!
+  </p>
+  <div class="gallery">
+  <figure>
+  <div class="card">
+    <img class="fotos card-face front" src="images/food/barbecue.jpg" alt="barbecue" width="120" height="120">
+	<p class="card-face back">ДА</p>
+	</div>
+    <figcaption class="caption yes">barbecue</figcaption>	
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/cake.jpg" alt="cake" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">cake</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/stuffed_tomato.jpg" alt="stuffed tomato" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">stuffed tomato</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/casserole.jpg" alt="casserole" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">casserole</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/cauliflower.jpg" alt="cauliflower" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">cauliflower</figcaption>
+	</figure>	
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/cutlets.jpg" alt="cutlets" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">cutlets</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/cutting.jpg" alt="cutting" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">cutting</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/dessert.jpg" alt="dessert" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">dessert</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/draniki.jpg" alt="draniki" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">draniki</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/dumplings.jpg" alt="dumplings" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">dumplings</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/fish.jpg" alt="fish" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">fish</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/edible_larvae.jpg" alt="edible larvae" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">edible larvae</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/eggplants.jpg" alt="eggplants" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">eggplants</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/envelopes.jpg" alt="envelopes" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">envelopes</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/fish_aspic.jpg" alt="fish aspic" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">fish aspic</figcaption>
+	</figure>	
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/fried_liver.jpg" alt="fried liver" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">fried liver</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/fruits.jpg" alt="fruits" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">fruits</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/garnet.jpg" alt="garnet" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">garnet</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/grapefruit.jpg" alt="grapefruit" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">grapefruit</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/hen.jpg" alt="hen" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">hen</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/herring.jpg" alt="herring" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">herring</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/ice_cream.jpg" alt="ice cream" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">ice cream</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/jelly.jpg" alt="jelly" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">jelly</figcaption>
+	</figure>	
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/kiwi.jpg" alt="kiwi" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">kiwi</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/lazy_dumplings.jpg" alt="lazy dumplings" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">lazy dumplings</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/strawberry.jpg" alt="strawberry" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">strawberry</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/meat_chop.jpg" alt="meat chop" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">meat chop</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/meat_dumplings.jpg" alt="meat dumplings" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">meat dumplings</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/meatballs.jpg" alt="meatballs" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">meatballs</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/mushrooms.jpg" alt="mushrooms" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">mushrooms</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/noodle_cake.jpg" alt="noodle cake" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">noodle cake</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/Olivier_salad.jpg" alt="Olivier salad" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">Olivier salad</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/pineapple.jpg" alt="pineapple" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">pineapple</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/pita.jpg" alt="pita" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">pita</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/Pitstsa.jpg" alt="Pitstsa" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">Pitstsa</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/jelly1.jpg" alt="jelly1" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">jelly1</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/potato_hemp.jpg" alt="potato hemp" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">potato hemp</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/pumpkin.jpg" alt="pumpkin" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">pumpkin</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/sandwich.jpg" alt="sandwich" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">sandwich</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/rose.jpg" alt="rose" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">rose</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/steak.jpg" alt="steak" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">steak</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/vegetables.jpg" alt="vegetables" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">vegetables</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/potato.jpg" alt="potato" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">potato</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/rolls.jpg" alt="rolls" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">rolls</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/scrambled_eggs.jpg" alt="scrambled eggs" width="120" height="120">
+	<p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">scrambled eggs</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/potatos.jpg" alt="potatos" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">potatos</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/soup.jpg" alt="soup" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">soup</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/lobster.jpg" alt="lobster" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">lobster</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/pumpkin_casserole.jpg" alt="pumpkin casserole" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">pumpkin casserole</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/salad.jpg" alt="salad" width="120" height="120">
+    <p class="card-face back">ДА</p>
+	</div>
+	<figcaption class="caption yes">salad</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/spider.jpg" alt="spider" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">spider</figcaption>
+	</figure>
+	<figure>
+	<div class="card">
+    <img class="fotos card-face front" src="images/food/tomato_soup.jpg" alt="tomato soup" width="120" height="120">
+    <p class="card-face back">НЕТ</p>
+	</div>
+	<figcaption class="caption no">tomato soup</figcaption>
+	</figure>
+	</div>
+	</div>
+	<a id="recipe"></a>
+	<h3>Рецептик</h3>
+	<h5>Грибы маринованные</h5>
+	<p>Ингридиенты:<br>
+	Грибы - 1кг;<br>
+	Соль - 1 столовая ложка;<br>
+	Сахар - 1 чайная ложка;<br>
+	Уксус - 30 грамм;<br>
+	Лавровый лист - 3 штуки;<br>
+	Чёрный перец - 6 горошков.</p>
+	<p>Рассол : 1 стакан воды, соль, сахар, уксус.	</p>
+	<p>Грибы (если крупные - порезать) варить в рассоле 30-40 минут. За 5 минут до конца варки положить лавровый лист, перец. Промыть, остудить, добавить мелко нарезанный чеснок, спрыснуть растительным маслом. Приятного аппетита!</p>
+  
+</section>
+
+<footer>
+  <div class="footer1">
+  <p>Автор: Елена Козенко</p>
+  <p>© 2019<p>
+   </div>
+  <div class="footer2">
+    Контакты:<br>
+    lenashmykova81@gmail.com<br>
+    Skype: lenkaaa55
+  </div>
+  </footer> 
+ </body>
+</html>
